@@ -18,4 +18,4 @@ Start-Process -FilePath "powershell" -ArgumentList "Invoke-Expression (Invoke-We
 /bin/bash -c "$(curl https://raw.githubusercontent.com/yamauchiio/1cmdadb/main/1cmdadb_linux.sh)"
 ```
 
-Paste that in a Windows PowerShell or macOS Terminal or Linux Shell Prompt.
+Paste that in a Windows Terminal or macOS Terminal or Linux Shell Prompt.
