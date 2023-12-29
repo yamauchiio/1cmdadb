@@ -3,7 +3,7 @@
 ### Windows
 
 ```
-Start-Process -FilePath "powershell" -ArgumentList "Invoke-Expression (Invoke-WebRequest -Uri 'https://github.com/yamauchiio/1cmdadb/raw/main/1cmdadb_windows.ps1').Content" -Verb RunAs
+$script = irm https://raw.githubusercontent.com/yamauchiio/1cmdadb/main/1cmdadb_windows.ps1; Set-ExecutionPolicy Bypass -Scope Process -Force; iex $script
 ```
 
 ### Mac
