@@ -17,3 +17,6 @@ Remove-Item -Path "./usb_driver" -Recurse
 if ([Environment]::GetEnvironmentVariable("Path", "Machine") -split ";" -notcontains "C:\platform-tools") {
     [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "Machine") + ";C:\platform-tools", "Machine")
 }
+
+Write-Host "Press any key to exit..."
+$null = Read-Host
